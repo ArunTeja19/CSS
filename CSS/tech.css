@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+    background-color: #e4eee4;
+    color: #333333;
+}
+
+
+/* header css begins */
+
+header{
+    height: 80px;
+    background-color: #1A431A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 29px;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+.logo{
+    font-weight: bold;
+}
+.active{
+    background-color: #4CAF50;
+    transform: scale(1.04);
+    border: 1px solid white;
+}
+header nav a{
+    
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px 13px;
+    border-radius: 8px;
+    transition: all 0.3S;
+}
+header nav a:hover{
+    background-color: #4CAF50;
+    transform: scale(1.04);
+    border: 1px solid white;
+}
+
+
+/* main i.e., sections css begins */
+
+main{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    align-items: start;
+    padding-top: 80px;
+}
+main>h1{
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 50px;
+}
+main>p{
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 25px;
+    word-spacing: 2px;
+    font-style: italic;
+}
+
+/* aside css begins */
+
+aside{
+grid-column: 1/2;
+background-color: whitesmoke;
+padding:0 20px;
+border-radius: 5px;
+position: sticky;
+top: 150px;
+}
+aside h3{
+color: #1A431A;
+letter-spacing: 1px;
+padding: 20px;
+font-size: 25px;
+font-weight: 500;
+font-variant: small-caps;
+height: fit-content;
+border-bottom:1px solid rgba(43, 43, 43,0.6);
+}
+aside ul{
+list-style: none;
+padding:20px 10px
+}
+aside a{
+text-decoration: none;
+color: rgb(0, 0, 0,0.7);
+display: inline-block;
+width: 100%;
+height: 50px;
+margin-bottom: 10px;
+font-size: 17px;
+padding: 10px;
+border-radius: 5px;
+transition: all 0.2s;
+}
+aside a:hover{
+background-color: rgb(76, 175, 80,0.9);
+color: white;
+transform: translate(4px, 0);
+}
+
+section{
+grid-column: 2 / -1;
+}
+
+/* content css begins */
+
+.sections{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    min-width: 0;
+    background-color: whitesmoke;
+    padding: 20px;
+    grid-gap: 10px;
+    border-radius: 20px;
+    border-left: 6px solid #1A431A;
+    transition: all 0.3s;
+    margin-bottom: 30px;
+    scroll-margin-top: 100px;
+}
+
+.sections h4{
+    grid-column: 1/-1;
+    padding: 10px;
+    background-color: #F7FFF2;
+    color: #8BC34A;
+    display: inline-block;
+    width: fit-content;
+    border-radius: 10px;
+}
+.sections h2{
+    grid-column: 1/-1;
+    padding: 10px;
+    border-top: 1px  solid rgba(0, 0, 0,0.2);
+    font-size: 40px;
+}
+.sections p{
+    grid-column: 1/3;
+    padding: 10px;
+    text-align: justify;
+    word-spacing: 2px;
+    font-size: 20px;
+}
+.sections .image1{
+    grid-column: 3/4;
+    padding: 10px;
+}
+.sections .image2{
+    grid-column: 4/-1;
+    padding: 10px;
+}
+.sections img{
+    height: 100%;
+    width: 100%;
+    border-left: 1px  solid rgba(0, 0, 0,0.2);
+    margin: 0 auto;
+}
+
+.sections:hover{
+    transform: translate(0,-4px);
+    box-shadow: 2px 2px 15px black;
+}
+
+
+/* footer section begins */
+
+.footer{
+    background-color: #1A431A;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+    padding: 40px;
+    padding-bottom: 10px;
+    grid-gap: 2%;
+}
+
+.footer-items h3{
+    color: #8BC34A;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s;
+}
+.contact-info a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.contact-info a:hover{
+    transform: scale(1.05);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.follow-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.follow-us-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    height: 100%;
+    width: 100%;
+}
+.follow-us-links a{
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    transition: transform 0.3s;
+}
+.follow-us-links a:hover{
+    border-radius: 5px;
+    outline: 1px solid white;
+    transform: translate(0,-3px);   
+}
+.copyright{
+    margin-top: 50px;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+/* making responsive begins */
+
+/* max-width: 992px */
+
+@media (max-width: 992px) {
+    header {
+        padding: 15px 20px;
+        font-size: 22px;
+    }
+    header nav a {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+
+    main>h1{
+    font-size: 40px;
+    }
+    main>p{
+        font-size: 20px;
+    }
+    aside{
+        position: sticky;
+        top: 80px;
+    }
+    aside a{
+        height: fit-content;
+        font-size: 16px;
+    }
+    .sections h2{
+        font-size: 30px;
+    }
+    .sections h4, .sections h2, .sections p{
+        grid-column: 1/-1;
+    }
+    .sections .image1{
+        grid-column: 1/3;
+    }
+     .sections .image2{
+        grid-column: 3/-1;
+    }
+}
+
+
+
+/* max-width: 670px  */
+
+@media (max-width: 670px) {
+    header {
+        padding: 20px;
+        font-size: 22px;
+    }
+    header nav a {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    main>h1{
+    font-size: 30px;
+    }
+    main>p{
+        font-size: 16px;
+    }
+    aside{
+        position: sticky;
+        top: 80px;
+    }
+    aside a{
+        font-size: 15px;
+    }
+    .sections h2{
+        font-size: 25px;
+    }
+    .sections p{
+        font-size: 16px;
+    }
+    .sections .image1, .sections .image2{
+        grid-column: 1/-1;
+    }
+
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .copyright{
+        margin: 0;
+    }
+}
+
+
+/* max-width: 480px */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 10px;
+        font-size: 16px;
+    }
+    header nav a {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    main>h1{
+    font-size: 23px;
+    }
+    main>p{
+        font-size: 16px;
+    }
+
+    aside{
+        grid-column: 1/-1;
+        position: sticky;
+        top: 80px;
+        z-index: 100;
+        padding:0 20px;
+    }
+    aside h3{
+        padding: 5px;
+        text-align: center;
+        font-size: 20px;
+    }
+    aside ul{
+        padding:0;
+        display: flex;
+    }
+    aside a{
+        width: 100%;
+        height: 55px;
+        margin-bottom: 10px;
+        font-size: 10px;
+        padding: 0;
+        padding-top: 5px;
+    }
+    aside a:hover{
+            transform: translate(0,3px);
+    }
+    section{
+            grid-column: 1/-1;
+    }
+    .sections{
+            scroll-margin-top: 200px;
+    }
+    .sections .image1{
+        grid-column: 1/3;
+    }
+     .sections .image2{
+        grid-column: 3/-1;
+     }
+
+
+
+
+
+
+    .footer {
+        padding: 20px;
+    }
+}
