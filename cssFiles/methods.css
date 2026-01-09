@@ -67,7 +67,7 @@ header nav a:hover{
 /* section1 css begins */
 
 .section1{
-    background-image: url("Images/method-page/methods-bg.avif");
+    background-image: url("../Images/method-page/methods-bg.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -231,7 +231,7 @@ header nav a:hover{
     word-spacing: 2px;
 }
 .objective-image{
-    background: url("Images/method-page/Organic_Farming/image1.webp");
+    background: url("../Images/method-page/Organic_Farming/image1.webp");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -283,7 +283,7 @@ header nav a:hover{
 }
 .bg-image{
     height: 70vh;
-    background-image: url("Images/method-page/Modern_Farming/modern-farming-bg.jpg");
+    background-image: url("../Images/method-page/Modern_Farming/modern-farming-bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -460,7 +460,7 @@ header nav a:hover{
     word-spacing: 2px;
 }
 #aquaponic .image{
-    background-image: url('Images/method-page/Aquaponic/aqua.webp');
+    background-image: url('../Images/method-page/Aquaponic/aqua.webp');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

@@ -56,7 +56,7 @@ header nav a:hover{
 /* section1 css begins */
 
 .section1{
-    background-image: url('Images/indexpage-bg.avif');
+    background-image: url('../Images/indexpage-bg.avif');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
